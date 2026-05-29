@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Checklist clôture comptable : vérifications avant bilan</title>
+  <meta name="description" content="Checklist clôture comptable : documents à réunir, contrôles par cycle, FNP, CCA, PCA, amortissements, provisions, TVA, paie, bilan et liasse fiscale." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://compta.axe-dossier.fr/checklist-cloture-comptable.html" />
+
+  <meta property="og:title" content="Checklist clôture comptable : ne rien oublier avant bilan" />
+  <meta property="og:description" content="Liste pratique des contrôles à effectuer avant une clôture comptable : banque, clients, fournisseurs, stocks, immobilisations, TVA, personnel et provisions." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://compta.axe-dossier.fr/checklist-cloture-comptable.html" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0f4b3b" />
+
+  <style>
+    :root{
+      --green:#0f4b3b; --green-dark:#0a3328; --blue:#0b6f8f; --ink:#17211d;
+      --muted:#5b6863; --line:#dce6e2; --soft:#f3f7f5; --white:#fff;
+      --shadow:0 18px 45px rgba(15,75,59,.12); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(180deg,#f8fbfa 0%,#eef5f2 100%);line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+    header{position:sticky;top:0;z-index:20;background:rgba(248,251,250,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,230,226,.85)}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;flex-direction:column;line-height:1.15;font-weight:850;letter-spacing:-.03em;color:var(--green)}
+    .brand span:last-child{font-size:.78rem;color:var(--muted);font-weight:650;letter-spacing:0}
+    .navlinks{display:flex;gap:18px;align-items:center;color:#34413c;font-size:.92rem}
+    .navlinks a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:.18s ease;text-align:center}
+    .btn.primary{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(15,75,59,.18)}
+    .btn.primary:hover{background:var(--green-dark);transform:translateY(-1px)}
+    .btn.secondary{background:#fff;color:var(--green);border-color:var(--line)}
+    .hero{padding:66px 0 38px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-200px;top:-220px;background:radial-gradient(circle,rgba(15,75,59,.17),transparent 68%);pointer-events:none}
+    .breadcrumb{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+    .breadcrumb a{color:var(--green);font-weight:750}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:start}
+    .badge{display:inline-flex;padding:8px 12px;border-radius:999px;background:#e7f1ed;color:var(--green);font-weight:800;font-size:.88rem;margin-bottom:18px}
+    h1{font-size:clamp(2.25rem,4.7vw,4.35rem);line-height:1.03;letter-spacing:-.06em;margin:0 0 20px;color:#10231c}
+    .lead{color:#40504a;font-size:1.15rem;max-width:790px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .summary-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);position:sticky;top:96px}
+    .summary-card h2{margin:0 0 14px;font-size:1.18rem;letter-spacing:-.02em}
+    .summary-card ol{padding-left:20px;margin:0;color:#40504a;font-size:.96rem}
+    .summary-card li{margin:8px 0}
+    .summary-card a{color:var(--green);font-weight:700}
+    main.article-wrap{padding:28px 0 64px}
+    .content-grid{display:grid;grid-template-columns:1fr 320px;gap:34px;align-items:start}
+    article{background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px;box-shadow:0 14px 36px rgba(17,33,28,.05)}
+    article h2{font-size:clamp(1.55rem,2.6vw,2.25rem);line-height:1.15;letter-spacing:-.04em;margin:40px 0 14px;color:#10231c}
+    article h2:first-child{margin-top:0}
+    article h3{font-size:1.22rem;margin:26px 0 10px;letter-spacing:-.02em;color:#18342a}
+    article p{color:#35443f;margin:12px 0}
+    article li{margin:8px 0;color:#35443f}
+    .note{border-left:5px solid var(--green);background:#f2f8f5;border-radius:16px;padding:18px 20px;margin:22px 0}
+    .warning{border-left:5px solid #b47b25;background:#fff7e8;border-radius:16px;padding:18px 20px;margin:22px 0}
+    .checklist{display:grid;grid-template-columns:1fr;gap:10px;padding:0;list-style:none;margin:18px 0 28px}
+    .checklist li{background:#f8fbfa;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0}
+    .checklist li:before{content:"☐ ";color:var(--green);font-weight:900}
+    .mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0}
+    .mini-card{background:#f8fbfa;border:1px solid var(--line);border-radius:16px;padding:16px}
+    .mini-card strong{color:#17342a}
+    .table-wrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:18px}
+    table{width:100%;border-collapse:collapse;min-width:620px;background:#fff}
+    th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f3f7f5;color:#18342a;font-size:.92rem}
+    tr:last-child td{border-bottom:none}
+    .side{display:grid;gap:18px}
+    .book-box,.mini-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 14px 34px rgba(17,33,28,.06)}
+    .cover{width:110px;height:155px;border-radius:6px;background:linear-gradient(180deg,#0f4b3b 0%,#555 100%);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:Georgia,serif;font-weight:800;box-shadow:0 12px 24px rgba(0,0,0,.16);margin-bottom:14px;font-size:.84rem;padding:9px}
+    .book-box h3,.mini-box h3{margin:0 0 10px;font-size:1.12rem}
+    .book-box p,.mini-box p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+    .related{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .related a{background:#f8fbfa;border:1px solid var(--line);border-radius:14px;padding:13px 14px;font-weight:780;color:#17342a}
+    .related a:hover{border-color:var(--green);color:var(--green)}
+    .faq details{border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:12px 0;background:#f8fbfa}
+    .faq summary{cursor:pointer;font-weight:800;color:#17342a}
+    footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+    .footer-grid{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media (max-width:940px){.hero-grid,.content-grid{grid-template-columns:1fr}.summary-card{position:relative;top:auto}.navlinks{display:none}article{padding:24px}.related,.mini-grid{grid-template-columns:1fr}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Checklist clôture comptable : vérifications avant bilan",
+    "description":"Checklist pratique pour préparer une clôture comptable : documents, cycles, écritures d’inventaire, contrôles finaux et passage au nouvel exercice.",
+    "author":{"@type":"Person","name":"Sophie Dumas"},
+    "publisher":{"@type":"Organization","name":"Axe Dossier"},
+    "mainEntityOfPage":"https://compta.axe-dossier.fr/checklist-cloture-comptable.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Que faut-il vérifier avant une clôture comptable ?","acceptedAnswer":{"@type":"Answer","text":"Il faut vérifier les banques, clients, fournisseurs, stocks, immobilisations, amortissements, paie, TVA, fiscalité, provisions, comptes d’attente et écritures d’inventaire."}},
+      {"@type":"Question","name":"Quels documents réunir pour une clôture comptable ?","acceptedAnswer":{"@type":"Answer","text":"Il faut réunir la balance générale, le grand livre, les rapprochements bancaires, factures, déclarations TVA, tableaux d’immobilisations, paie, stocks et justificatifs de provisions."}},
+      {"@type":"Question","name":"Quelles écritures ne pas oublier à la clôture ?","acceptedAnswer":{"@type":"Answer","text":"Les écritures à ne pas oublier concernent notamment les FNP, CCA, PCA, produits à recevoir, charges à payer, amortissements, provisions, dépréciations, stocks et régularisations fiscales ou sociales."}}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="/" class="brand">
+        <span>Comptabilité pratique</span>
+        <span>Opérations courantes • Inventaire • Clôture</span>
+      </a>
+      <nav class="navlinks">
+        <a href="/">Accueil</a>
+        <a href="#documents">Documents</a>
+        <a href="#cycles">Cycles</a>
+        <a href="#ecritures">Écritures</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn primary" href="https://www.amazon.fr/dp/B0BVT728PV" target="_blank" rel="noopener">Voir le guide</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="/">Accueil</a> → Checklist clôture comptable</div>
+      <div class="hero-grid">
+        <div>
+          <div class="badge">Checklist de clôture</div>
+          <h1>Checklist clôture comptable : vérifications avant bilan</h1>
+          <p class="lead">
+            Avant d’éditer le bilan et la liasse fiscale, il faut vérifier les principaux cycles comptables,
+            passer les écritures d’inventaire et documenter les soldes importants.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#cycles">Voir la checklist</a>
+            <a class="btn secondary" href="#ecritures">Écritures à ne pas oublier</a>
+          </div>
+        </div>
+
+        <aside class="summary-card">
+          <h2>En résumé</h2>
+          <ol>
+            <li><a href="#documents">Réunir les documents</a></li>
+            <li><a href="#cycles">Contrôler chaque cycle</a></li>
+            <li><a href="#ecritures">Passer les OD de clôture</a></li>
+            <li><a href="#controle-final">Faire le contrôle final</a></li>
+            <li><a href="#faq">Vérifier les points fréquents</a></li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <main class="article-wrap">
+    <div class="wrap content-grid">
+      <article>
+        <h2>Pourquoi utiliser une checklist de clôture comptable ?</h2>
+        <p>
+          La clôture comptable regroupe de nombreux contrôles : banque, clients, fournisseurs, stocks,
+          immobilisations, TVA, paie, provisions et comptes divers. Une checklist permet de ne pas oublier
+          une étape importante avant le bilan.
+        </p>
+
+        <div class="note">
+          <strong>À retenir :</strong> une bonne clôture comptable repose sur trois réflexes :
+          contrôler, justifier et rattacher les opérations au bon exercice.
+        </div>
+
+        <h2 id="documents">1. Documents à réunir avant la clôture</h2>
+        <ul class="checklist">
+          <li>Balance générale provisoire.</li>
+          <li>Grand livre complet.</li>
+          <li>Rapprochements bancaires.</li>
+          <li>Factures clients et fournisseurs.</li>
+          <li>Factures reçues après la clôture.</li>
+          <li>Déclarations de TVA.</li>
+          <li>Tableau des immobilisations.</li>
+          <li>Tableau des amortissements.</li>
+          <li>État des stocks si l’entreprise est concernée.</li>
+          <li>Journaux de paie et charges sociales.</li>
+          <li>Justificatifs de provisions ou litiges.</li>
+          <li>Relevés fiscaux et sociaux.</li>
+        </ul>
+
+        <h2 id="cycles">2. Checklist par cycle comptable</h2>
+
+        <h3>Banque et trésorerie</h3>
+        <ul class="checklist">
+          <li>Les rapprochements bancaires sont réalisés.</li>
+          <li>Les soldes bancaires correspondent aux relevés.</li>
+          <li>Les chèques non encaissés sont identifiés.</li>
+          <li>Les virements en transit sont expliqués.</li>
+          <li>Les frais bancaires de fin d’exercice sont comptabilisés.</li>
+        </ul>
+
+        <h3>Clients et chiffre d’affaires</h3>
+        <ul class="checklist">
+          <li>Les factures clients sont toutes comptabilisées.</li>
+          <li>Les avoirs à établir sont analysés.</li>
+          <li>Les produits à recevoir sont identifiés.</li>
+          <li>Les créances douteuses sont vérifiées.</li>
+          <li>Les impayés significatifs sont documentés.</li>
+        </ul>
+
+        <h3>Fournisseurs et charges</h3>
+        <ul class="checklist">
+          <li>Les factures fournisseurs sont rapprochées.</li>
+          <li>Les factures reçues en N+1 sont analysées.</li>
+          <li>Les FNP sont comptabilisées si nécessaire.</li>
+          <li>Les charges à payer sont identifiées.</li>
+          <li>Les comptes fournisseurs anciens sont justifiés.</li>
+        </ul>
+
+        <h3>Stocks</h3>
+        <ul class="checklist">
+          <li>L’inventaire physique est réalisé si l’entreprise a des stocks.</li>
+          <li>La valorisation des stocks est justifiée.</li>
+          <li>Les stocks obsolètes ou dépréciés sont identifiés.</li>
+          <li>La variation de stock est comptabilisée.</li>
+        </ul>
+
+        <h3>Immobilisations et amortissements</h3>
+        <ul class="checklist">
+          <li>Les achats immobilisables sont identifiés.</li>
+          <li>Les sorties ou cessions d’immobilisations sont comptabilisées.</li>
+          <li>Les amortissements sont calculés.</li>
+          <li>Les dotations aux amortissements sont comptabilisées.</li>
+          <li>Les immobilisations inutilisées ou obsolètes sont analysées.</li>
+        </ul>
+
+        <h3>Personnel et charges sociales</h3>
+        <ul class="checklist">
+          <li>Les salaires sont rapprochés de la paie.</li>
+          <li>Les charges sociales sont cohérentes avec les déclarations.</li>
+          <li>Les congés payés acquis non pris sont provisionnés.</li>
+          <li>Les primes ou 13e mois sont analysés.</li>
+          <li>Les comptes 421, 431, 437 et 438 sont justifiés.</li>
+        </ul>
+
+        <h3>État, TVA et fiscalité courante</h3>
+        <ul class="checklist">
+          <li>Les comptes de TVA sont cohérents.</li>
+          <li>La TVA collectée et déductible est rapprochée.</li>
+          <li>Les crédits de TVA sont expliqués.</li>
+          <li>Les acomptes d’IS sont comptabilisés si concerné.</li>
+          <li>Les taxes comme CFE, formation ou apprentissage sont vérifiées.</li>
+        </ul>
+
+        <h3>Provisions, capitaux propres et comptes divers</h3>
+        <ul class="checklist">
+          <li>Les provisions sont justifiées et documentées.</li>
+          <li>Les litiges éventuels sont analysés.</li>
+          <li>L’affectation du résultat N-1 est vérifiée.</li>
+          <li>Les comptes 467, 471 et 472 sont soldés ou expliqués.</li>
+          <li>Les écritures inhabituelles sont documentées.</li>
+        </ul>
+
+        <h2 id="ecritures">3. Écritures d’inventaire à ne pas oublier</h2>
+        <p>
+          Certaines écritures reviennent régulièrement lors d’une clôture. Elles doivent être vérifiées avant de valider les comptes.
+        </p>
+
+        <div class="mini-grid">
+          <div class="mini-card"><strong>FNP</strong><br>Charge de N, facture reçue en N+1.</div>
+          <div class="mini-card"><strong>CCA</strong><br>Charge comptabilisée en N mais concernant N+1.</div>
+          <div class="mini-card"><strong>PCA</strong><br>Produit comptabilisé en N mais concernant N+1.</div>
+          <div class="mini-card"><strong>PAR</strong><br>Produit acquis en N mais non encore facturé.</div>
+          <div class="mini-card"><strong>CAP</strong><br>Charge de N connue mais non encore facturée ou payée.</div>
+          <div class="mini-card"><strong>Amortissements</strong><br>Répartition du coût des immobilisations.</div>
+          <div class="mini-card"><strong>Provisions</strong><br>Risque probable, estimable et documenté.</div>
+          <div class="mini-card"><strong>Stocks</strong><br>Inventaire et variation de stocks.</div>
+        </div>
+
+        <div class="warning">
+          <strong>Point de vigilance :</strong> toutes les écritures ne se contrepassent pas automatiquement.
+          Les FNP, CCA, PCA ou CAP sont souvent extournées. Les provisions doivent être suivies jusqu’à leur reprise.
+        </div>
+
+        <h2 id="controle-final">4. Contrôle final avant bilan</h2>
+        <ul class="checklist">
+          <li>La balance est équilibrée.</li>
+          <li>Les comptes d’attente sont soldés ou expliqués.</li>
+          <li>Les soldes anciens sont justifiés.</li>
+          <li>Le résultat comptable paraît cohérent avec l’activité.</li>
+          <li>Les charges exceptionnelles sont documentées.</li>
+          <li>Les réintégrations fiscales éventuelles sont identifiées.</li>
+          <li>Les contrepassations de début d’exercice sont listées.</li>
+          <li>Le dossier de clôture est complet.</li>
+        </ul>
+
+        <h2>5. Erreurs fréquentes à éviter</h2>
+        <ul>
+          <li>clôturer sans rapprochement bancaire ;</li>
+          <li>oublier les factures reçues après clôture ;</li>
+          <li>ne pas comptabiliser les CCA ou PCA ;</li>
+          <li>confondre provision et charge à payer ;</li>
+          <li>laisser un compte d’attente non expliqué ;</li>
+          <li>ne pas vérifier la cohérence du résultat ;</li>
+          <li>oublier les écritures de contrepassation.</li>
+        </ul>
+
+        <h2 id="faq">FAQ — Checklist clôture comptable</h2>
+        <div class="faq">
+          <details>
+            <summary>Comment vérifier une clôture comptable ?</summary>
+            <p>Il faut contrôler chaque cycle comptable, vérifier les justificatifs, passer les écritures d’inventaire et s’assurer que le résultat et le bilan sont cohérents.</p>
+          </details>
+          <details>
+            <summary>Que faut-il contrôler avant le bilan ?</summary>
+            <p>Il faut contrôler les banques, clients, fournisseurs, immobilisations, stocks, paie, TVA, impôts, provisions, comptes divers et écritures de clôture.</p>
+          </details>
+          <details>
+            <summary>Quelles écritures sont à vérifier en priorité ?</summary>
+            <p>Les FNP, CCA, PCA, produits à recevoir, charges à payer, amortissements, provisions, stocks et régularisations fiscales ou sociales.</p>
+          </details>
+          <details>
+            <summary>Une checklist suffit-elle pour clôturer ?</summary>
+            <p>Elle aide à structurer le travail, mais les cas complexes peuvent nécessiter un professionnel, notamment en fiscalité, social, provisions ou restructuration.</p>
+          </details>
+        </div>
+
+        <h2>À retenir</h2>
+        <p>
+          Une checklist de clôture comptable permet de travailler avec méthode, cycle par cycle.
+          Elle réduit les oublis, sécurise les écritures d’inventaire et facilite la préparation du bilan.
+        </p>
+
+        <div class="related">
+          <a href="comment-faire-une-cloture-comptable.html">Comment faire une clôture comptable</a>
+          <a href="ecriture-inventaire-fin-exercice.html">Écritures d’inventaire</a>
+          <a href="fnp-comptabilite-exemple.html">FNP comptabilité : exemple</a>
+          <a href="cca-comptabilite-exemple.html">CCA comptabilité : exemple</a>
+          <a href="provision-comptable-exemple.html">Provision comptable : exemple</a>
+          <a href="amortissement-comptable-exemple.html">Amortissement comptable</a>
+        </div>
+      </article>
+
+      <aside class="side">
+        <div class="book-box">
+          <div class="cover">Écritures<br>d’inventaire<br>& clôture</div>
+          <h3>Guide complet de clôture comptable</h3>
+          <p>Un guide pratique pour comprendre les cycles de clôture, FNP, CCA, provisions, amortissements, TVA, paie et contrôles finaux.</p>
+          <a class="btn primary" href="https://www.amazon.fr/dp/B0BVT728PV" target="_blank" rel="noopener">Voir sur Amazon</a>
+        </div>
+        <div class="mini-box">
+          <h3>À lire aussi</h3>
+          <p>Pour comprendre les écritures comptables du quotidien avant la clôture.</p>
+          <a class="btn secondary" href="https://www.amazon.fr/dp/B0H2XZML1F" target="_blank" rel="noopener">Opérations courantes</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>© 2026 — Comptabilité pratique • Axe Dossier</div>
+      <div><a href="/">Accueil</a> · Guides comptables pour TPE, PME, indépendants et étudiants</div>
+    </div>
+  </footer>
+</body>
+</html>
