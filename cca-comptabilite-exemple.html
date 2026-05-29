@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CCA comptabilité : exemple simple de charge constatée d’avance</title>
+  <meta name="description" content="CCA comptabilité : comprendre les charges constatées d’avance, exemple d’écriture comptable avec le compte 486, calcul, contrepassation et clôture comptable." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://compta.axe-dossier.fr/cca-comptabilite-exemple.html" />
+
+  <meta property="og:title" content="CCA comptabilité : exemple simple" />
+  <meta property="og:description" content="Méthode simple pour comprendre et comptabiliser une charge constatée d’avance à la clôture comptable." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://compta.axe-dossier.fr/cca-comptabilite-exemple.html" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0f4b3b" />
+
+  <style>
+    :root{
+      --green:#0f4b3b; --green-dark:#0a3328; --blue:#0b6f8f; --ink:#17211d;
+      --muted:#5b6863; --line:#dce6e2; --soft:#f3f7f5; --white:#fff;
+      --shadow:0 18px 45px rgba(15,75,59,.12); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(180deg,#f8fbfa 0%,#eef5f2 100%);line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+    header{position:sticky;top:0;z-index:20;background:rgba(248,251,250,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,230,226,.85)}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;flex-direction:column;line-height:1.15;font-weight:850;letter-spacing:-.03em;color:var(--green)}
+    .brand span:last-child{font-size:.78rem;color:var(--muted);font-weight:650;letter-spacing:0}
+    .navlinks{display:flex;gap:18px;align-items:center;color:#34413c;font-size:.92rem}
+    .navlinks a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:.18s ease;text-align:center}
+    .btn.primary{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(15,75,59,.18)}
+    .btn.primary:hover{background:var(--green-dark);transform:translateY(-1px)}
+    .btn.secondary{background:#fff;color:var(--green);border-color:var(--line)}
+    .hero{padding:66px 0 38px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-200px;top:-220px;background:radial-gradient(circle,rgba(15,75,59,.17),transparent 68%);pointer-events:none}
+    .breadcrumb{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+    .breadcrumb a{color:var(--green);font-weight:750}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:start}
+    .badge{display:inline-flex;padding:8px 12px;border-radius:999px;background:#e7f1ed;color:var(--green);font-weight:800;font-size:.88rem;margin-bottom:18px}
+    h1{font-size:clamp(2.25rem,4.7vw,4.35rem);line-height:1.03;letter-spacing:-.06em;margin:0 0 20px;color:#10231c}
+    .lead{color:#40504a;font-size:1.15rem;max-width:790px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .summary-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);position:sticky;top:96px}
+    .summary-card h2{margin:0 0 14px;font-size:1.18rem;letter-spacing:-.02em}
+    .summary-card ol{padding-left:20px;margin:0;color:#40504a;font-size:.96rem}
+    .summary-card li{margin:8px 0}
+    .summary-card a{color:var(--green);font-weight:700}
+    main.article-wrap{padding:28px 0 64px}
+    .content-grid{display:grid;grid-template-columns:1fr 320px;gap:34px;align-items:start}
+    article{background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px;box-shadow:0 14px 36px rgba(17,33,28,.05)}
+    article h2{font-size:clamp(1.55rem,2.6vw,2.25rem);line-height:1.15;letter-spacing:-.04em;margin:40px 0 14px;color:#10231c}
+    article h2:first-child{margin-top:0}
+    article h3{font-size:1.22rem;margin:24px 0 8px;letter-spacing:-.02em;color:#18342a}
+    article p{color:#35443f;margin:12px 0}
+    article li{margin:8px 0;color:#35443f}
+    .note{border-left:5px solid var(--green);background:#f2f8f5;border-radius:16px;padding:18px 20px;margin:22px 0}
+    .warning{border-left:5px solid #b47b25;background:#fff7e8;border-radius:16px;padding:18px 20px;margin:22px 0}
+    .table-wrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:18px}
+    table{width:100%;border-collapse:collapse;min-width:620px;background:#fff}
+    th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f3f7f5;color:#18342a;font-size:.92rem}
+    tr:last-child td{border-bottom:none}
+    .formula{background:#f8fbfa;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:20px 0;color:#17342a;font-weight:750}
+    .checklist{display:grid;grid-template-columns:1fr;gap:10px;padding:0;list-style:none}
+    .checklist li{background:#f8fbfa;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0}
+    .checklist li:before{content:"☐ ";color:var(--green);font-weight:900}
+    .side{display:grid;gap:18px}
+    .book-box,.mini-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 14px 34px rgba(17,33,28,.06)}
+    .cover{width:110px;height:155px;border-radius:6px;background:linear-gradient(180deg,#0f4b3b 0%,#555 100%);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:Georgia,serif;font-weight:800;box-shadow:0 12px 24px rgba(0,0,0,.16);margin-bottom:14px;font-size:.84rem;padding:9px}
+    .book-box h3,.mini-box h3{margin:0 0 10px;font-size:1.12rem}
+    .book-box p,.mini-box p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+    .related{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .related a{background:#f8fbfa;border:1px solid var(--line);border-radius:14px;padding:13px 14px;font-weight:780;color:#17342a}
+    .related a:hover{border-color:var(--green);color:var(--green)}
+    .faq details{border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:12px 0;background:#f8fbfa}
+    .faq summary{cursor:pointer;font-weight:800;color:#17342a}
+    footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+    .footer-grid{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media (max-width:940px){.hero-grid,.content-grid{grid-template-columns:1fr}.summary-card{position:relative;top:auto}.navlinks{display:none}article{padding:24px}.related{grid-template-columns:1fr}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"CCA comptabilité : exemple simple de charge constatée d’avance",
+    "description":"Comprendre et comptabiliser une CCA à la clôture : compte 486, calcul prorata, exemple chiffré et contrepassation.",
+    "author":{"@type":"Person","name":"Sophie Dumas"},
+    "publisher":{"@type":"Organization","name":"Axe Dossier"},
+    "mainEntityOfPage":"https://compta.axe-dossier.fr/cca-comptabilite-exemple.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Qu’est-ce qu’une CCA en comptabilité ?","acceptedAnswer":{"@type":"Answer","text":"Une CCA, ou charge constatée d’avance, est une charge déjà comptabilisée pendant l’exercice mais qui concerne en partie ou en totalité l’exercice suivant."}},
+      {"@type":"Question","name":"Quel compte utiliser pour une CCA ?","acceptedAnswer":{"@type":"Answer","text":"Le compte généralement utilisé est le compte 486 Charges constatées d’avance, en contrepartie du compte de charge concerné."}},
+      {"@type":"Question","name":"Une CCA doit-elle être contrepassée ?","acceptedAnswer":{"@type":"Answer","text":"Oui, une CCA est généralement extournée au début de l’exercice suivant afin que la charge soit correctement rattachée à l’exercice concerné."}}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="/" class="brand">
+        <span>Comptabilité pratique</span>
+        <span>Opérations courantes • Inventaire • Clôture</span>
+      </a>
+      <nav class="navlinks">
+        <a href="/">Accueil</a>
+        <a href="#definition">Définition</a>
+        <a href="#exemple">Exemple</a>
+        <a href="#contrepassation">Contrepassation</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn primary" href="https://www.amazon.fr/dp/B0BVT728PV" target="_blank" rel="noopener">Voir le guide</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="/">Accueil</a> → CCA comptabilité</div>
+      <div class="hero-grid">
+        <div>
+          <div class="badge">Charge constatée d’avance</div>
+          <h1>CCA comptabilité : exemple simple</h1>
+          <p class="lead">
+            Une CCA permet de retirer d’un exercice une charge déjà comptabilisée, mais qui concerne l’exercice suivant.
+            C’est une écriture d’inventaire essentielle pour présenter un résultat comptable cohérent.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#exemple">Voir l’écriture comptable</a>
+            <a class="btn secondary" href="#checklist">Check-list CCA</a>
+          </div>
+        </div>
+
+        <aside class="summary-card">
+          <h2>En résumé</h2>
+          <ol>
+            <li><a href="#definition">Comprendre la CCA</a></li>
+            <li><a href="#utilite">Savoir quand l’utiliser</a></li>
+            <li><a href="#calcul">Calculer le montant</a></li>
+            <li><a href="#exemple">Voir un exemple chiffré</a></li>
+            <li><a href="#contrepassation">Prévoir la contrepassation</a></li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <main class="article-wrap">
+    <div class="wrap content-grid">
+      <article>
+        <h2 id="definition">Qu’est-ce qu’une CCA en comptabilité ?</h2>
+        <p>
+          Une CCA signifie <strong>charge constatée d’avance</strong>.
+          Elle concerne une charge déjà enregistrée en comptabilité, mais qui se rapporte en réalité à l’exercice suivant.
+        </p>
+        <p>
+          À la clôture, cette charge doit être retirée temporairement du résultat de l’exercice en cours,
+          afin de respecter le principe de rattachement des charges au bon exercice.
+        </p>
+
+        <div class="note">
+          <strong>À retenir :</strong> une CCA ne crée pas une nouvelle dépense. Elle déplace simplement une charge vers le bon exercice comptable.
+        </div>
+
+        <h2 id="utilite">Quand faut-il comptabiliser une CCA ?</h2>
+        <p>Une CCA doit être envisagée lorsqu’une charge :</p>
+        <ul>
+          <li>a déjà été comptabilisée pendant l’exercice ;</li>
+          <li>a déjà été payée ou facturée ;</li>
+          <li>concerne en partie ou en totalité l’exercice suivant.</li>
+        </ul>
+
+        <h3>Exemples fréquents</h3>
+        <ul>
+          <li>assurance annuelle payée d’avance ;</li>
+          <li>loyer payé d’avance ;</li>
+          <li>abonnement logiciel annuel ;</li>
+          <li>maintenance ou contrat d’entretien ;</li>
+          <li>hébergement internet ou nom de domaine ;</li>
+          <li>cotisation couvrant une période future.</li>
+        </ul>
+
+        <h2 id="calcul">Comment calculer une CCA ?</h2>
+        <p>
+          Le calcul consiste à isoler la partie de la charge qui concerne l’exercice suivant.
+          Le plus souvent, on utilise un calcul au prorata temporis.
+        </p>
+
+        <div class="formula">
+          Montant de la CCA = charge totale × période concernant N+1 / période totale couverte
+        </div>
+
+        <div class="warning">
+          <strong>Point de vigilance :</strong> il faut toujours conserver le justificatif de calcul :
+          facture, contrat, période couverte et détail du prorata.
+        </div>
+
+        <h2 id="exemple">Exemple de CCA avec écriture comptable</h2>
+        <p>
+          Une entreprise paie le 1er octobre N une assurance annuelle de <strong>1 200 €</strong>,
+          couvrant la période du 1er octobre N au 30 septembre N+1.
+        </p>
+        <p>
+          À la clôture du 31 décembre N, seuls les mois d’octobre, novembre et décembre concernent l’exercice N.
+          Les 9 mois de janvier à septembre N+1 doivent être constatés en CCA.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Élément</th><th>Calcul</th><th>Montant</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Charge annuelle</td><td>Assurance totale</td><td>1 200 €</td></tr>
+              <tr><td>Part concernant N</td><td>3 mois / 12 mois</td><td>300 €</td></tr>
+              <tr><td>Part concernant N+1</td><td>9 mois / 12 mois</td><td>900 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Le montant de la CCA à comptabiliser est donc de <strong>900 €</strong>.
+        </p>
+
+        <h3>Journal OD — Charge constatée d’avance</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Compte</th><th>Libellé</th><th>Débit</th><th>Crédit</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>486</td><td>Charges constatées d’avance</td><td>900 €</td><td></td></tr>
+              <tr><td>616</td><td>Assurances</td><td></td><td>900 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Pourquoi la CCA diminue les charges de l’exercice ?</h2>
+        <p>
+          Au départ, l’entreprise a comptabilisé toute la facture d’assurance en charge.
+          Or, une partie de cette charge concerne l’exercice suivant.
+        </p>
+        <p>
+          L’écriture de CCA vient donc diminuer les charges de l’exercice N, pour ne conserver que la part réellement rattachée à N.
+        </p>
+
+        <div class="note">
+          <strong>Effet comptable :</strong> la CCA augmente le résultat de l’exercice N, car elle retire une charge qui concerne N+1.
+        </div>
+
+        <h2 id="contrepassation">Contrepassation d’une CCA</h2>
+        <p>
+          Une CCA est généralement contrepassée au début de l’exercice suivant.
+          Cette extourne permet que la charge soit correctement reprise dans l’exercice N+1.
+        </p>
+
+        <h3>Journal OD — Contrepassation au 01/01/N+1</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Compte</th><th>Libellé</th><th>Débit</th><th>Crédit</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>616</td><td>Assurances</td><td>900 €</td><td></td></tr>
+              <tr><td>486</td><td>Charges constatées d’avance</td><td></td><td>900 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>CCA ou FNP : comment ne pas confondre ?</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Situation</th><th>Écriture concernée</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Charge de N mais facture non reçue</td><td>FNP</td></tr>
+              <tr><td>Charge déjà comptabilisée en N mais concernant N+1</td><td>CCA</td></tr>
+              <tr><td>Facture reçue après clôture pour une prestation réalisée en N</td><td>FNP</td></tr>
+              <tr><td>Assurance ou abonnement annuel payé d’avance</td><td>CCA</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Erreurs fréquentes à éviter</h2>
+        <ul>
+          <li>oublier les abonnements annuels payés d’avance ;</li>
+          <li>ne pas vérifier la période couverte par la facture ;</li>
+          <li>confondre CCA et FNP ;</li>
+          <li>calculer le prorata sans justificatif ;</li>
+          <li>oublier la contrepassation au début de l’exercice suivant.</li>
+        </ul>
+
+        <h2 id="checklist">Check-list CCA à la clôture</h2>
+        <ul class="checklist">
+          <li>Les factures couvrant plusieurs périodes ont été identifiées.</li>
+          <li>Les assurances, loyers, abonnements et maintenances ont été vérifiés.</li>
+          <li>La période concernant N+1 est clairement déterminée.</li>
+          <li>Le calcul du prorata est documenté.</li>
+          <li>Le compte 486 est justifié.</li>
+          <li>La contrepassation au 01/01/N+1 est prévue.</li>
+          <li>Le justificatif est conservé dans le dossier de clôture.</li>
+        </ul>
+
+        <h2 id="faq">FAQ — CCA comptabilité</h2>
+        <div class="faq">
+          <details>
+            <summary>Une CCA est-elle une charge ?</summary>
+            <p>Non. La CCA est un compte de régularisation qui permet de retirer temporairement une charge de l’exercice N lorsqu’elle concerne N+1.</p>
+          </details>
+          <details>
+            <summary>Quel compte utiliser pour une CCA ?</summary>
+            <p>Le compte utilisé est généralement le compte 486 Charges constatées d’avance.</p>
+          </details>
+          <details>
+            <summary>Une CCA augmente-t-elle le résultat ?</summary>
+            <p>Oui, elle augmente le résultat de l’exercice N car elle diminue les charges comptabilisées sur cet exercice.</p>
+          </details>
+          <details>
+            <summary>Faut-il contrepasser une CCA ?</summary>
+            <p>Oui, généralement la CCA est extournée au début de l’exercice suivant afin de rattacher la charge à N+1.</p>
+          </details>
+        </div>
+
+        <h2>À retenir</h2>
+        <p>
+          La CCA est une écriture de clôture indispensable lorsqu’une charge a été comptabilisée trop tôt.
+          Elle permet de rattacher la dépense au bon exercice et d’obtenir un résultat comptable plus juste.
+        </p>
+
+        <div class="related">
+          <a href="comment-faire-une-cloture-comptable.html">Comment faire une clôture comptable</a>
+          <a href="ecriture-inventaire-fin-exercice.html">Écritures d’inventaire</a>
+          <a href="fnp-comptabilite-exemple.html">FNP comptabilité : exemple</a>
+          <a href="provision-comptable-exemple.html">Provision comptable : exemple</a>
+        </div>
+      </article>
+
+      <aside class="side">
+        <div class="book-box">
+          <div class="cover">Écritures<br>d’inventaire<br>& clôture</div>
+          <h3>Guide complet de clôture comptable</h3>
+          <p>Un guide pratique pour comprendre les CCA, FNP, provisions, amortissements et régularisations de fin d’exercice.</p>
+          <a class="btn primary" href="https://www.amazon.fr/dp/B0BVT728PV" target="_blank" rel="noopener">Voir sur Amazon</a>
+        </div>
+        <div class="mini-box">
+          <h3>À lire aussi</h3>
+          <p>Pour comprendre les opérations comptables du quotidien.</p>
+          <a class="btn secondary" href="https://www.amazon.fr/dp/B0H2XZML1F" target="_blank" rel="noopener">Opérations courantes</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>© 2026 — Comptabilité pratique • Axe Dossier</div>
+      <div><a href="/">Accueil</a> · Guides comptables pour TPE, PME, indépendants et étudiants</div>
+    </div>
+  </footer>
+</body>
+</html>
